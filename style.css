@@ -1,0 +1,565 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Roboto', sans-serif;
+}
+
+main{
+    background-image: url("img/principal_banner_desktop.jpg");
+    width: 100%;
+    height: 840px;
+}
+
+header{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 49px;
+    display: flex;
+    color: white;
+    font-size: 14px;
+    justify-content: space-evenly;
+}
+
+.menu{
+    color: white
+}
+
+.menu-opened{
+    width: 565px;
+    height: 249px;
+    background-color: #084154;
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 104px;
+    left: 345px;
+    border: 2px solid #3EC6E0;
+    border-radius: 5px;
+    box-shadow: 10px 10px #3EC6E0;
+}
+
+.menu-opened-triangulo{
+    width: 208px;
+    height: 8px;
+    position: relative;
+    top: -14px;
+    left: 20px;
+}
+
+.menu-opened-types{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    padding-right: 60px;
+}
+
+.menu-opened h6{
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    list-style: none;
+    line-height: 27px;
+    padding-left: 16px;
+    padding-top: 8px;
+}
+
+.menu-opened p{
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 16px;
+    padding-top: 8px;
+    line-height: 27px;
+}
+
+.menu-opened p:hover{
+    background-color: #3EC6E0;
+    width: 166px;
+    height: 33px;
+    border-radius: 5px;
+}
+
+.menu-logo{
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+}
+
+.nav{
+    width: 435px;
+    display: flex;
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline-flex;
+    padding: 0 20px;
+}
+
+.texto2{
+    padding-top: 4px;
+}
+
+.lista1, .lista2{
+    padding-right: 20px;
+}
+
+.line2, .lista3{
+    padding-bottom: 8px;
+}
+
+.bag{
+    color: white;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #3EC6E0;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    left: 3px;
+    top: 4px;
+    display: none;
+}
+
+h2{
+    font-size: 46px;
+    font-weight: 900;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+.wrap-descricao-slider{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 120px;
+}
+
+.descricao{
+    width: 420px;
+    height: 327px;
+    margin-right: 422px;
+}
+
+.descricao p:first-of-type{
+    color:#3EC6E0;
+    font-size: 70px;
+    font-weight: 900;
+    text-align: right;
+}
+
+.descricao p:first-of-type span{
+    font-size: 28px;
+    position: relative;
+    bottom: 22px;
+}
+
+.descricao p:last-of-type{
+    color: white;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: right;
+    margin-top: 28px;
+}
+
+.wrap-slider{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 14px;
+}
+
+.slider{
+    background-color: #3EC6E0;
+    width: 63px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+}
+
+.rotate{
+    transform: rotate(90deg);
+    margin-top: 76px;
+    width: 114px;
+}
+
+.line3{
+    margin: 110px auto 22px;
+}
+
+.slider-bot{
+    width: 63px;
+    height: 84px;
+    background-color: #084154;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+}
+
+.slider-bot p:first-of-type{
+    padding-top: 23px;
+}
+
+.bots{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.wrap-banners{
+    display: flex;
+    justify-content: center;
+    margin-top: 95px;
+    flex-wrap: wrap;
+}
+
+.banner-um{
+    background-image: url("img/zelda_banner.jpg");
+    background-size: contain;
+    width: 627px;
+    height: 429px;
+    margin-right: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.banner-detalhe{
+    width: 11px;
+    height: 61px;
+    background-color: #084154;
+    border-bottom-left-radius: 5px;
+}
+
+.banner-titulo{
+    background-color: #3EC6E0;
+    width: 616px;
+    height: 61px;
+    border-bottom-right-radius: 5px;
+    font-weight: 700;
+    color: #084154;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner-dois{
+    background-image: url("img/sekiro_banner.jpg");
+    background-size: contain;
+    width: 627px;
+    height: 429px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.produtos img{
+    position: relative;
+    left: 324px;
+   
+    bottom: 37px
+}
+
+h3{
+    margin: 373px 0 0 377px;
+    color: #084154;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+section{
+    display: flex;
+    margin:80px 0 171px 402px;
+    flex-wrap: wrap;
+}
+
+.caixa{
+    width: 350px;
+    height: 602px;
+    box-shadow: 0px 4px 20px 7px #00000012;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.caixa{
+    margin-right: 35px;
+}
+
+.caixa-jogo{
+    width: 350px;
+    height: 417px;
+    background-color: white;
+    border-bottom: 2px solid #3EC6E0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.caixa-jogo img{
+    padding-top: 36px;
+}
+
+.caixa-preco{
+    width: 350px;
+    height: 185px;
+    background-color: #F5F5F5;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    justify-content: space-evenly;
+}
+
+
+.caixa-preco p:first-of-type{
+    color:#084154;
+    font-size: 14px;
+}
+
+.caixa-preco p:last-of-type{
+    color:#084154;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+button{
+    width: 240px;
+    height: 52px;
+    border-radius: 5px;
+    color: white;
+    background-color: #3EC6E0;
+    font-size: 18px;
+    font-weight: 900;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    border: none;
+}
+
+.comprado{
+    width: 240px;
+    height: 52px;
+    border-radius: 5px;
+    color: white;
+    background-color: #084154;
+    font-size: 18px;
+    font-weight: 900;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    border: none;
+}
+
+.comprar{
+    display: none;
+    position: relative;
+    bottom: 28px;
+    left: 27px;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+}
+
+.detalhe-logo{
+    width: 547px;
+    height: 50px;
+    background-color: #084154;
+    padding: 11px 44px 11px 461px;
+}
+
+.direitos{
+    color: white;
+    background-color: #3EC6E0;
+    font-size: 14px;
+    padding: 17px 0 17px 35px;
+    width: 1373px;
+}
+
+.cover{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 65, 84, 0.62);
+    top:0;
+    left: 0;
+    position: fixed;
+    display: none;
+}
+
+.mario-escondido{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    z-index: 1;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    margin-top: -250px;
+    margin-left: -200px;
+    border-radius: 5px;
+}
+
+.fechar{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #F55959;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 300;
+    margin-left: 340px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.fechar img:first-of-type{
+    top: -4px;
+    position: absolute;
+    left: 263px;
+}
+
+.fechar img:last-of-type{
+    top: -4px;
+    position: absolute;
+    left: 263px;
+}
+
+.mario-escondido p{
+    color: #084154;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 70px 82px 0 72px;
+    text-align: center;
+    z-index: 1;
+    background-color: #FFFFFF;
+}
+
+.retangulo-primeiro{
+    z-index: -1;
+    padding-top: 70px;
+    position: absolute;
+    top: 79px;
+    left: 0px;
+}
+
+.retangulo-segundo{
+    padding: 27px 95px 0 88px;
+}
+
+@media (max-width:1290px){
+    .wrap-banners {
+        display: flex;
+        align-items: center;
+        margin-top: 284px;
+        flex-direction: column;
+    }
+
+    .banner-um{
+        margin-right: 0;
+    }
+
+    .banner-dois{
+        margin-top: 10px;
+    }
+
+    .produtos{
+        margin-top: 1000px;
+    }
+
+    section {
+        margin-top: 25px;
+        
+    }
+
+    .caixa{
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:1024px){
+
+    main{
+        min-width: 1024px
+        
+    }
+
+    header{
+        justify-content: flex-start;
+    }
+
+    .slider{
+        transform: rotate(-90deg);
+        
+        margin-left: 354px;
+    }
+
+    .wrap-slider{
+        flex-direction: row;
+        align-items: center;
+        
+        margin-top: -110px;
+        min-width: 100%;
+    }
+
+    .slider-bot{
+       
+        height: 63px;
+        min-width: 33%;
+    }
+
+    .slider-bot p:first-of-type {
+        padding-top: 7px;
+    }
+
+    .bots{
+        justify-content: space-evenly;
+    }
+
+    .wrap-descricao-slider{
+        flex-direction: column;
+        margin-top: 350px;
+        margin-right: 0;
+        align-items: center;
+    }
+
+    .descricao{
+        margin-right: 0;
+    }
+
+   section{
+       justify-content: center;
+      
+   }
+
+   .wrap-banners{
+       margin-top: 0;
+   }
+
+   footer{
+       min-width: 548px;
+   }
+
+   .detalhe-logo {
+        padding: 11px 22px 11px 15px;
+        width: 100%;
+}
+
+    .direitos {
+        
+        
+}
+
+    
+}
