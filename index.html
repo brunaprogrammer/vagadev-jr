@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no" />    
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -19,38 +19,38 @@
     
     <main>
         <div class="box"></div>
-            <header>
+            <header class="container">
                 <div class="menu-logo">
                     <div class="menu">
                         <img src="img/icon_hamburguer.png" alt="menu">
-                    </div>
-                    <div class="menu-opened">
-                        <div class="menu-opened-triangulo">
-                            <img src="img/Rectangle 7.png" alt="">
+                        <div class="menu-opened">
+                            <div class="menu-opened-triangulo">
+                                <img src="img/Rectangle 7.png" alt="">
+                            </div>
+                            <div class="menu-opened-types">
+                                <div class="menu-opened-luta">
+                                    <h6>Luta</h6>
+                                        <p>Mortal Kombat</p>
+                                        <p>Smash Bros</p>
+                                        <p>Killer Instict</p>
+                                        <p>DBZ Kakarot</p>
+                                </div>
+                                <div class="menu-opened-acao">
+                                    <h6>Ação  / Aventura</h6>
+                                        <p>GTA V</p>
+                                        <p>Tomb Raider</p>
+                                        <p>HALO</p>
+                                        <p>Call of Duty</p>
+                                </div>
+                                <div class="menu-opened-corrida">
+                                    <h6>Corrida</h6>
+                                        <p>NEED for SPEED</p>
+                                        <p>Forza Horizon</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="menu-opened-types">
-                            <div class="menu-opened-luta">
-                                <h6>Luta</h6>
-                                    <p>Mortal Kombat</p>
-                                    <p>Smash Bros</p>
-                                    <p>Killer Instict</p>
-                                    <p>DBZ Kakarot</p>
-                            </div>
-                            <div class="menu-opened-acao">
-                                <h6>Ação  / Aventura</h6>
-                                    <p>GTA V</p>
-                                    <p>Tomb Raider</p>
-                                    <p>HALO</p>
-                                    <p>Call of Duty</p>
-                            </div>
-                            <div class="menu-opened-corrida">
-                                <h6>Corrida</h6>
-                                    <p>NEED for SPEED</p>
-                                    <p>Forza Horizon</p>
-                            </div>
-                        </div>
-                        
                     </div>
+
                     <div class="logo">
                        <h1><img src="img/logo.png" alt="logo"></h1> 
                     </div>
@@ -65,7 +65,7 @@
                     </ul>
                 </div>
             </header>
-            <div class="wrap-descricao-slider">
+            <div class="wrap-descricao-slider container">
                 <div class="descricao">
                     <h2>MORTAL KOMBAT</h2>
                     <p>R$ 299<span>,99</span></p>
@@ -87,24 +87,27 @@
                 </div>
             </div>
         
-        <div class="wrap-banners">
-            <div class="banner-um">
-                <div class="banner-detalhe"></div>
-                <div class="banner-titulo">
-                    <p>The Legend of Zelda - Breath of th wild </p> <img src="img/Line 4.png" alt=""></div>
-            </div>
-            <div class="banner-dois">
-                <div class="banner-detalhe"></div>
-                <div class="banner-titulo">
-                    <p>SEKIRO - Shadows die twice </p> <img src="img/Line 4.png" alt=""></div>
-            </div>
-        </div>
+        
     </main>
-    <div class="produtos">
-        <h3> Produtos em destaque</h3><img src="img/Group 6.png" alt="">
-    </div>
+
+    <section class="wrap-banners container">
+        <div class="banner-um">
+            <div class="banner-detalhe"></div>
+            <div class="banner-titulo">
+                <p>The Legend of Zelda - Breath of th wild </p> <img src="img/Line 4.png" alt=""></div>
+        </div>
+        <div class="banner-dois">
+            <div class="banner-detalhe"></div>
+            <div class="banner-titulo">
+                <p>SEKIRO - Shadows die twice </p> <img src="img/Line 4.png" alt=""></div>
+        </div>
+    </section>
+    <section class="produtos container">
+        <img src="img/Group 6.png" alt="">
+        <h3> Produtos em destaque</h3>
+    </section>
     
-    <section>
+    <section class="container vitrine">
         <div class="caixa">
             <div class="caixa-jogo">
                 <img src="img/product-outriders.png" alt="">
@@ -125,7 +128,7 @@
             <div class="caixa-preco">
                 <p>CYBERPUNK 2077</p>
                 <p>R$ 200,00</p>
-                <div class="mudado"></div>
+                <div class="mudado">
                     <button class="btn dois">COMPRAR</button>
                     <img class="comprar" src="img/comprado.png" alt="">
                 </div>
@@ -145,6 +148,7 @@
             </div>
         </div>
     </section>
+
     <footer>
         <div class="detalhe-logo">
             <img src="img/logo_header 1.png" alt="">
@@ -162,11 +166,7 @@
             <p>Pedido realizado com sucesso!</p>
             <img class="retangulo-segundo"src="img/image 6.png" alt="">
         </div>
-    
     </div>
-
-    
-
     <script src="script.js"></script>
 </body>
 </html>
