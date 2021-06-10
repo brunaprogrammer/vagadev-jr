@@ -6,15 +6,12 @@ function opened (){
     menuOpened.style.display = "block";
 }
 
-menu.addEventListener("click", opened);
 menu.addEventListener("mouseover", opened);
+menu.addEventListener("mouseleave", esconderMenu);
 
 function esconderMenu (){
     menuOpened.style.display = "none";
-    console.log("nao")
 }
-
-menuOpened.addEventListener("click",esconderMenu);
 
 var btnUm = document.querySelector(".btn um")
 var btnDois = document.querySelector(".btn dois")

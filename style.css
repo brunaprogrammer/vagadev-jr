@@ -8,24 +8,32 @@ body{
     font-family:'Roboto', sans-serif;
 }
 
+.container {
+    max-width: 1190px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
 main{
     background-image: url("img/principal_banner_desktop.jpg");
+    background-size: cover;
     width: 100%;
     height: 840px;
+    padding-top: 44px;
 }
 
 header{
     width: 100%;
     margin: 0 auto;
-    padding-top: 49px;
     display: flex;
     color: white;
     font-size: 14px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .menu{
-    color: white
+    color: white;
+    position: relative;
 }
 
 .menu-opened{
@@ -35,8 +43,8 @@ header{
     z-index: 1;
     display: none;
     position: absolute;
-    top: 104px;
-    left: 345px;
+    top: calc(42px + 16px);
+    left: -24px;
     border: 2px solid #3EC6E0;
     border-radius: 5px;
     box-shadow: 10px 10px #3EC6E0;
@@ -148,7 +156,7 @@ h2{
 .descricao{
     width: 420px;
     height: 327px;
-    margin-right: 422px;
+    margin-right: 112px;
 }
 
 .descricao p:first-of-type{
@@ -173,6 +181,8 @@ h2{
 }
 
 .wrap-slider{
+    position: absolute;
+    right: 0;
     display: flex;
     flex-direction: column;
     color: white;
@@ -218,15 +228,15 @@ h2{
 
 .wrap-banners{
     display: flex;
-    justify-content: center;
-    margin-top: 95px;
+    justify-content: space-between;
+    margin-top: -125px;
     flex-wrap: wrap;
 }
 
 .banner-um{
     background-image: url("img/zelda_banner.jpg");
-    background-size: contain;
-    width: 627px;
+    background-size: cover;
+    width: calc(50% - 10px);
     height: 429px;
     margin-right: 20px;
     display: flex;
@@ -242,7 +252,7 @@ h2{
 
 .banner-titulo{
     background-color: #3EC6E0;
-    width: 616px;
+    width: 100%;
     height: 61px;
     border-bottom-right-radius: 5px;
     font-weight: 700;
@@ -253,24 +263,31 @@ h2{
     align-items: center;
 }
 
+.banner-titulo img {
+    width: 40%;
+}
+
 .banner-dois{
     background-image: url("img/sekiro_banner.jpg");
-    background-size: contain;
-    width: 627px;
+    background-size: cover;
+    width: calc(50% - 10px);
     height: 429px;
     display: flex;
     align-items: flex-end;
 }
 
-.produtos img{
-    position: relative;
-    left: 324px;
-   
-    bottom: 37px
+.produtos {
+    display: flex;
+    align-items: center;
+    margin: 80px auto;
 }
 
-h3{
-    margin: 373px 0 0 377px;
+.produtos img{
+    width: 24px;
+    margin-right: 24px;
+}
+
+.produtos h3{
     color: #084154;
     font-weight: 300;
     font-size: 36px;
@@ -282,22 +299,22 @@ section{
     flex-wrap: wrap;
 }
 
+.vitrine {
+    margin-bottom: 80px;
+}
 .caixa{
-    width: 350px;
+    width: 33.333%;
+    padding: 0 14px;
     height: 602px;
-    box-shadow: 0px 4px 20px 7px #00000012;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.caixa{
-    margin-right: 35px;
-}
-
 .caixa-jogo{
-    width: 350px;
+    box-shadow: 0px 4px 20px 7px #00000012;
+    width: 100%;
     height: 417px;
     background-color: white;
     border-bottom: 2px solid #3EC6E0;
@@ -310,7 +327,7 @@ section{
 }
 
 .caixa-preco{
-    width: 350px;
+    width: 100%;
     height: 185px;
     background-color: #F5F5F5;
     border-bottom-left-radius: 10px;
@@ -333,7 +350,12 @@ section{
     font-weight: 900;
 }
 
-button{
+.mudado {
+    display: flex;
+    justify-content: center;
+}
+
+.caixa-preco button{
     width: 240px;
     height: 52px;
     border-radius: 5px;
@@ -367,12 +389,13 @@ button{
 }
 
 footer{
-    display: flex;
+    display: grid;
     width: 100%;
+    grid-template-columns: 3.5fr 6.5fr;
+    background-color: #084154;
 }
 
 .detalhe-logo{
-    width: 547px;
     height: 50px;
     background-color: #084154;
     padding: 11px 44px 11px 461px;
@@ -382,8 +405,7 @@ footer{
     color: white;
     background-color: #3EC6E0;
     font-size: 14px;
-    padding: 17px 0 17px 35px;
-    width: 1373px;
+    padding: 17px 35px;
 }
 
 .cover{
@@ -458,11 +480,16 @@ footer{
     padding: 27px 95px 0 88px;
 }
 
+@media (max-width:1190px){
+    .container {
+        max-width: 100%;
+    }
+}
 @media (max-width:1290px){
     .wrap-banners {
         display: flex;
         align-items: center;
-        margin-top: 284px;
+        margin-top: -284px;
         flex-direction: column;
     }
 
@@ -489,6 +516,7 @@ footer{
 }
 
 @media (max-width:1024px){
+
 
     main{
         min-width: 1024px

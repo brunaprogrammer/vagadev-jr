@@ -1,0 +1,26 @@
+.menu {
+  display: none;
+
+  &__item {
+    padding: 20px;
+
+    &__text {
+
+    }
+  }
+}
+
+// style.css
+.menu {
+  display: none;
+}
+
+.menu__item {
+  padding: 20px;
+}
+
+<div class="menu">
+ <div className="menu__item"></div>
+ <div className="menu__item"><p class="menu__item__text"></p></div>
+
+</div>
